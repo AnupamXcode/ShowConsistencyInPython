@@ -1,5 +1,6 @@
 <div align="center">
 
+
 # 🐍 Show Consistency in Python
 
 <img src="https://img.shields.io/badge/Challenge-30%20Days-blueviolet?style=for-the-badge" />
