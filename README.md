@@ -4,12 +4,27 @@
 
 <img src="https://img.shields.io/github/last-commit/AnupamXcode/100Days_of_Python?style=for-the-badge" />
 <img src="https://img.shields.io/github/repo-size/AnupamXcode/100Days_of_Python?style=for-the-badge" />
-<img src="https://img.shields.io/github/languages/top/AnupamXcode/100Days_of_Python?style=for-the-badge&logo=python" />
 
-### 🚀 Logic • Consistency • Problem Solving
+### 🚀 Consistency • Logic • Growth
 
 </div>
 
+---
+
+## 📊 Live Stats (Auto Updated)
+
+- 📅 Total Days Completed: **<!-- DAYS -->0<!-- END_DAYS -->**
+- 🧩 Total Problems Solved: **<!-- PROBLEMS -->0<!-- END_PROBLEMS -->**
+- 🔥 Current Streak: **<!-- STREAK -->0<!-- END_STREAK --> days**
+- 🏆 Longest Streak: **<!-- MAX_STREAK -->0<!-- END_MAX_STREAK --> days**
+
+---
+
+## 📂 Structure
+
+<!-- STRUCTURE_START -->
+```bash
+Loading...
 ---
 
 ## ✨ About
