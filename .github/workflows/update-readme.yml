@@ -1,0 +1,46 @@
+
+```yaml
+name: Update README Structure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Generate Folder Structure
+        run: |
+          sudo apt-get install tree
+          echo "```bash" > structure.txt
+          tree -d -L 2 >> structure.txt
+          echo "```" >> structure.txt
+
+      - name: Update README
+        run: |
+          awk '
+          /<!-- START_STRUCTURE -->/ {
+              print;
+              system("cat structure.txt");
+              skip=1;
+              next
+          }
+          /<!-- END_STRUCTURE -->/ {skip=0}
+          !skip {print}
+          ' README.md > temp.md
+
+          mv temp.md README.md
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "🔄 Auto update structure" || echo "No changes"
+          git push
